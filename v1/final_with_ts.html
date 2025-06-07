@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yeeter6</title>
+</head>
+<body>
+  <div id="proto">proto</div>
+  <div id="text">text</div>
+
+  <canvas id="mycanvas" width="700" height="700"></canvas>
+
+  <div id="textApp">
+    <div id="prevButton" class="navButton">prev</div>
+    <div id="nextButton" class="navButton">next</div>
+    <div id="tweetList" >textapp BBBB</div>
+  </div>
+
+  <style lang="css">
+    #mycanvas {
+      border: 1px solid purple;
+    }
+
+    #proto, #text {
+      width: 50px;
+    }
+
+    #proto.current {
+      background: lightblue;
+    }
+
+    #text.current {
+      background: lightblue;
+    }
+
+    #mycanvas {
+      display: none;
+    }
+
+    #mycanvas.current {
+      display: block;
+    }
+
+    #textApp {
+      display: none;
+    }
+
+    #textApp.current {
+      display: block;
+    }
+
+    .tweetContainer {
+      max-width: 450px;
+      margin: 16px;
+    }
+
+    .navButton {
+      margin: 12px;
+      color: lightpink;
+    }
+
+    </style>
+</body>
+<script type="application/javascript" src="./client.js"></script>
+</html>

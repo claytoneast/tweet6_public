@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Twitter Is Garbage</title>
+</head>
+<body>
+  <h2>
+    Twitter Is Garbage
+  </h2>
+
+  <div id="metaContainer">
+    <div id="totalConversationsCount"></div>
+    <div id="lastRunAt"></div>
+  </div>
+  <div id="loadingState">Loading...</div>
+  <div id="errorState"></div>
+
+  <buttton id="refetchButton">Refetch Data</buttton>
+
+  <div id="tweetList">
+  </div>
+
+  <div class="bottomNav">
+    <button id="prevButton">prev</button>
+    <button id="nextButton">next</button>
+  </div>
+
+  <style lang="css">
+    #refetchButton { display: none; }
+    #refetchButton.show { display: block; }
+
+    #loadingState { display: none; }
+    #loadingState.show { display: block; }
+
+    #errorState { display: none; }
+    #errorState.show { display: block; }
+
+    #tweetList {
+      max-width: 450px;
+      margin-bottom: 100px;
+    }
+
+    #metaContainer {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #totalConversationsCount, #lastRunAt {
+      width: 100%;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid;
+    }
+
+    #lastRunAt {
+      text-align: right;
+    }
+
+    h2 {
+      margin-bottom: 8px;
+    }
+
+    img {
+      max-width: 100vw;
+    }
+
+    #nextButton, #prevButton {
+      background: lightblue;
+      border-radius: 3px;
+      width: 100%;
+      height: 60px;
+    }
+
+    .bottomNav {
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    .tweetContainer {
+      margin-bottom: 24px;
+    }
+
+  </style>
+</body>
+<script type="application/javascript">
+<%= @js_content %>
+</script>
+</html>

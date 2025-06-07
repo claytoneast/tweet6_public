@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "noImplicitUseStrict": true,
+    "lib": ["es2015", "dom"]
+  }
+}
